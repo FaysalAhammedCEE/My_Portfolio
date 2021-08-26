@@ -1,0 +1,1978 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+a,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/*fonts starts*/
+@font-face {
+    font-family: 'Lobster';
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url(../fonts/Arimo-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url(../fonts/Arimo-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url(../fonts/Arimo-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url(../fonts/Arimo-Bold.ttf);
+    font-weight: 700;
+}
+
+/*fonts end*/
+
+/* ============================================
+            PRELOADER START
+============================================ */
+
+.Preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d3548;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Preloader_Text {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Preloader .Preloader_LineArea .line {
+    width: 3px;
+    height: 20px;
+    background: #fff;
+    margin: 0 1px;
+    display: inline-block;
+    animation: preloder 1000ms infinite ease-in-out;
+}
+
+.Preloader .Preloader_LineArea .line-1 {
+    animation-delay: 800ms;
+}
+
+.Preloader .Preloader_LineArea .line-2 {
+    animation-delay: 600ms;
+}
+
+.Preloader .Preloader_LineArea .line-3 {
+    animation-delay: 400ms;
+}
+
+.Preloader .Preloader_LineArea .line-4 {
+    animation-delay: 200ms;
+}
+
+.Preloader .Preloader_LineArea .line-6 {
+    animation-delay: 200ms;
+}
+
+.Preloader .Preloader_LineArea .line-7 {
+    animation-delay: 400ms;
+}
+
+.Preloader .Preloader_LineArea .line-8 {
+    animation-delay: 600ms;
+}
+
+.Preloader .Preloader_LineArea .line-9 {
+    animation-delay: 800ms;
+}
+
+@keyframes preloder {
+    0% {
+        opacity: 1;
+        height: 15px;
+    }
+
+    50% {
+        opacity: 0;
+        height: 12px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 15px;
+    }
+}
+
+/* ============================================
+            PRELOADER END
+============================================ */
+/* ============================================
+            COMMON BUTTON START
+============================================ */
+.Common_Button {
+    color: #f68338;
+    font-size: 16px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    padding: 8px 15px;
+    background: transparent;
+    border: 2px solid #f68338;
+    text-transform: uppercase;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.4s;
+    transition-delay: 0s;
+}
+
+.Common_Button:hover {
+    color: #fff;
+    box-shadow: 0 25px 30px 0 rgb(0 0 0 / 16%), 0 25px 30px 0 rgb(0 0 0 / 12%);
+    transition-delay: 0.8s;
+}
+
+.Common_Button::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -20px;
+    width: 20px;
+    height: 2px;
+    background: #f68338;
+    border-radius: 25px;
+    transform: translateY(-50%);
+    z-index: -1;
+    box-shadow: 7px -8px 0 #f68338, 7px 8px 0 #f68338;
+    transition: width 0.4s, left 0.4s, height 0.4s, box-shadow 0.4s;
+    transition-delay: 0.5s, 0.3s, 0s, 0s;
+}
+
+.Common_Button:hover::before {
+    width: 70%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #f68338, 5px 0 0 #f68338;
+    transition-delay: 0s, 0.3s, 0.5s, 0.5s;
+}
+
+.Common_Button::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -20px;
+    width: 20px;
+    height: 2px;
+    background: #f68338;
+    border-radius: 25px;
+    transform: translateY(-50%);
+    z-index: -1;
+    box-shadow: -7px -8px 0 #f68338, -7px 8px 0 #f68338;
+    transition: width 0.4s, right 0.4s, height 0.4s, box-shadow 0.4s;
+    transition-delay: 0.5s, 0.3s, 0s, 0s;
+}
+
+.Common_Button:hover::after {
+    width: 70%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #f68338, -5px 0 0 #f68338;
+    transition-delay: 0s, 0.3s, 0.5s, 0.5s;
+}
+
+.button_margin {
+    margin-right: 50px;
+}
+
+/* ============================================
+            COMMON BUTTON END
+============================================ */
+/* ============================================
+              HEADER PART START
+============================================ */
+#Menu_Part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background: transparent;
+    z-index: 5;
+}
+
+#Menu_Part .Menu_Logo_Area .Menu_Logo a h2 {
+    color: #1d3548;
+    font-size: 40px;
+    font-family: 'Arimo';
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+#Menu_Part .Menu_Logo_Area .Menu_Logo a h2 span {
+    color: #fff;
+    opacity: 0.75;
+}
+
+#Menu_Part .Main_Menu_Area .Desktop_Menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Menu_Part .Main_Menu_Area .Desktop_Menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 25px;
+    letter-spacing: 0.6px;
+    transition: all linear .4s;
+    -webkit-ransition: all linear .4s;
+    position: relative;
+    z-index: 1;
+}
+
+#Menu_Part .Main_Menu_Area .Desktop_Menu ul li a:hover,
+#Menu_Part .Main_Menu_Area .Desktop_Menu ul li a.active,
+#Menu_Part.Menu_Fixed ul li a:hover,
+#Menu_Part.Menu_Fixed ul li a.active {
+    color: #fff !important;
+    opacity: 1;
+}
+
+#Menu_Part .Main_Menu_Area .Desktop_Menu ul li a::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 0;
+    background: #fff;
+    transition: all linear .4s;
+    -webkit-ransition: all linear .4s;
+    z-index: -1;
+}
+
+#Menu_Part .Main_Menu_Area .Desktop_Menu ul li a.active::after {
+    width: 100%;
+}
+
+#Menu_Part .Call_Button_Area {
+    display: flex;
+    justify-content: center;
+}
+
+#Menu_Part .Call_Button_Area .Call_Button .Common_Button {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+#Menu_Part .Call_Button_Area .Call_Button .Common_Button:hover {
+    color: #f68338;
+}
+
+#Menu_Part .Call_Button_Area .Call_Button .Common_Button::before {
+    background: #fff;
+    box-shadow: 7px -8px 0 #fff, 7px 8px 0 #fff;
+}
+
+#Menu_Part .Call_Button_Area .Call_Button .Common_Button:hover::before {
+    box-shadow: 5px 0 0 #fff, 5px 0 0 #fff;
+}
+
+#Menu_Part .Call_Button_Area .Call_Button .Common_Button::after {
+    background: #fff;
+    box-shadow: -7px -8px 0 #fff, -7px 8px 0 #fff;
+}
+
+#Menu_Part .Call_Button_Area .Call_Button .Common_Button:hover::after {
+    box-shadow: -5px 0 0 #fff, -5px 0 0 #fff;
+}
+
+.Mobile_Icon {
+    z-index: 4;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.Mobile_Icon .One {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.Mobile_Icon .Two {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 7px 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.Mobile_Icon .Three {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    float: right;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.Menu_Fixed {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: #f68338 !important;
+    padding: 15px 0 !important;
+    box-shadow: 0px 0px 25px #1d3548;
+    animation: menu 0.4s linear;
+}
+
+@keyframes menu {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.Menu_Fixed.Menu_Part {
+    padding: 15px 0 !important;
+}
+
+.Menu_Fixed ul li a {
+    color: #fff !important;
+    font-weight: 500 !important;
+    opacity: .75;
+}
+
+.Menu_Fixed .Menu_Logo_Area img {
+    max-width: 50px;
+}
+
+/* ========================== SIDE MENU START ========================== */
+.Mobile_Menu {
+    position: fixed;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background: #1d3548;
+    z-index: 3;
+    transform: translateY(-120vh);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.Mobile_Menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 8px 0;
+    text-align: center;
+    letter-spacing: 0.6px;
+    width: 100%;
+    opacity: 0.8;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+.Mobile_Menu ul li a:hover,
+.Mobile_Menu ul li a.active {
+    opacity: 1;
+    background: #fff;
+    color: #1d3548;
+}
+
+.Side_Menu {
+    transform: translateY(0);
+}
+
+/* ============================================
+              HEADER PART END
+============================================ */
+/* ============================================
+              BANNER PART START
+============================================ */
+#Banner_Section {
+    background: url(../images/banner-img.jpg) no-repeat center;
+    background-size: cover;
+    padding: 250px 0 150px;
+    position: relative;
+    z-index: 1;
+}
+
+#Banner_Section::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: -1;
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text h4 {
+    color: #f68338;
+    font-size: 24px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    margin-bottom: -9px;
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text h1 {
+    color: #fff;
+    font-size: 75px;
+    font-family: 'Lobster';
+    font-style: italic;
+    text-shadow: 0px 0px 80px rgba(217, 178, 87, .4);
+    margin-bottom: 37px;
+    position: relative;
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text h1::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -41px;
+    width: 15px;
+    height: 15px;
+    background: #f68338;
+    border-radius: 50%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    animation: animation1 4s alternate infinite;
+}
+
+@keyframes animation1 {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 106px;
+    }
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text h1::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -35px;
+    width: 120px;
+    height: 2px;
+    background: #fff;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text h1:hover::before {
+    width: 200px;
+    background: #f68338;
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Arimo';
+    opacity: 0.8;
+    padding: 0 30px 0 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text p::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(246, 131, 56, 1) 52%, rgba(246, 131, 56, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(246, 131, 56, 1) 52%, rgba(246, 131, 56, 1) 100%);
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text #typed_strings {
+    display: block;
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text #typed {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Arimo';
+}
+
+#Banner_Section .Banner_Text_Area .Banner_Text #typed strong {
+    color: #f68338;
+}
+
+#Banner_Section .typed-cursor {
+    color: #f68338;
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+/* ============================================
+              BANNER PART END
+============================================ */
+
+/* ============================================
+              ABOUT PART START
+============================================ */
+#About_Section {
+    padding: 80px 0 62px;
+    position: relative;
+    z-index: 1;
+}
+
+#About_Section::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 35%;
+    height: 50%;
+    background: #1d3548;
+    z-index: -2;
+}
+
+#About_Section::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    height: 50%;
+    background: #f68338;
+    z-index: -2;
+}
+
+#About_Section .About_Image_Area {
+    position: relative;
+}
+
+#About_Section .About_Image_Area .About_Image img {
+    border: 8px solid #fff;
+    box-shadow: rgb(29 53 72 / 25%) 0px 25px 50px -12px;
+}
+
+#About_Section .About_Image_Area .About_Dots {
+    position: absolute;
+    left: -25%;
+    top: 25%;
+    max-width: 250px;
+    z-index: -1;
+    animation: movied 2s infinite alternate-reverse;
+}
+
+#About_Section .About_Image_Area .About_Dots span {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    margin: 5px;
+    display: inline-block;
+}
+
+@keyframes movied {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+
+    100% {
+        transform: scale(1.1) rotate(-45deg);
+        ;
+    }
+}
+
+.Section_Heading_Text h3 {
+    color: #f68338;
+    font-size: 45px;
+    font-family: 'Lobster';
+    text-transform: capitalize;
+    letter-spacing: 2.5px;
+    margin-bottom: 13px;
+}
+
+#About_Section .About_Detail_Area .About_Detail h4 {
+    color: #1d3548;
+    font-size: 25px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 14px;
+}
+
+#About_Section .About_Detail_Area .About_Detail p {
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+#About_Section .Common_Button_area .Common_Button {
+    margin-right: 40px;
+}
+
+#About_Section .About_Counter_Area {
+    border-radius: 125px;
+    box-shadow: rgb(29 53 72 / 25%) 25px 25px 50px -12px;
+    overflow: hidden;
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter_Area {
+    background: #fff;
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter_Icon i {
+    color: #f68338;
+    font-size: 45px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter span {
+    font-size: 45px;
+    color: #f68338;
+    font-family: 'Lobster';
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter_Info p {
+    font-size: 16px;
+    color: #f68338;
+    font-family: 'Arimo';
+    margin-top: -11px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter {
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f68338;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter:hover::after {
+    transform: translateY(0);
+}
+
+#About_Section .About_Counter_Area .Single_About_Counter:hover .About_Counter_Icon i,
+#About_Section .About_Counter_Area .Single_About_Counter:hover .About_Counter span,
+#About_Section .About_Counter_Area .Single_About_Counter:hover .About_Counter_Info p {
+    color: #fff;
+}
+
+#About_Section .About_Counter_Area {
+    margin-top: 30px;
+}
+
+/* ============================================
+              ABOUT PART END
+============================================ */
+
+/* ============================================
+              RESUME PART START
+============================================ */
+#Service_Section {
+    padding: 79px 0;
+    background: #f68338;
+    position: relative;
+    z-index: 1;
+}
+
+#Service_Section::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #1d3548;
+    z-index: -1;
+}
+
+#Service_Section .Section_Heading_Text h3 {
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.Section_Heading_Text p {
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+#Service_Section .container .row {
+    align-items: center;
+}
+
+#Service_Section .Section_Heading_Text h3 {
+    color: #fff;
+}
+
+.Section_Heading_Text h3 span {
+    display: block;
+    margin-left: 45px;
+}
+
+#Service_Section .Section_Heading_Text p {
+    color: #fff;
+}
+
+#Service_Section .Section_Heading_Text {
+    margin-left: 30px;
+}
+
+#Service_Section .Survice_Card_Area:hover .Survice_Card_Info {
+    transform: rotateY(180deg);
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Info {
+    text-align: center;
+    position: relative;
+    padding: 8em 0;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Back,
+#Service_Section .Survice_Card_Area .Survice_Card_Front {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Front {
+    background: #f68338;
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Back {
+    transform: rotateY(180deg);
+    background: #f68338;
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Front::before,
+#Service_Section .Survice_Card_Area .Survice_Card_Front::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: translateZ(3rem);
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Front::before {
+    bottom: 15px;
+    left: 15px;
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Front::after {
+    bottom: 23px;
+    left: 23px;
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Back::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    border: 3px solid #fff;
+    transform: translateZ(3rem);
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Front .flaticon {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    color: #fff;
+    font-size: 70px;
+    transform: translateZ(3rem);
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Front span i {
+    color: #f68338;
+    font-size: 45px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(7rem);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Front h4 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    transform: translateZ(6rem);
+}
+
+#Service_Section .Survice_Card_Area .Survice_Card_Back p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+    line-height: 26px;
+    transform: translateZ(6rem);
+}
+
+#Service_Section .Survice_Mar {
+    margin-bottom: 30px;
+}
+
+/* ============================================
+              SERVICE PART END
+============================================ */
+
+/* ============================================
+            SKILL PART START
+============================================ */
+#Skill_Section {
+    padding: 70px 0px 79px;
+}
+
+#Skill_Section .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Skill_Section .Skill_Card {
+    position: relative;
+    padding: 120px 0;
+    margin-bottom: 60px;
+}
+
+#Skill_Section .Skill_Card_Area .Skill_Card .Skill_Card_Box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+#Skill_Section .Skill_Card .Skill_Head {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Arimo';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #f68338;
+    text-align: center;
+    padding: 30px 20px 10px;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    white-space: nowrap;
+    transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+    -webkit-transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+    transition-delay: 0.5s, 0.5s, 0s, 0.5s;
+    -webkit-transition-delay: 0.5s, 0.5s, 0s, 0.5s;
+}
+
+#Skill_Section .Skill_Card:hover .Skill_Head {
+    padding: 10px 20px 10px;
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50px);
+    -webkit-transform: translateX(-50%) translateY(-50px);
+    transition-delay: 0s, 0.5s, 0.5s, 0s;
+    -webkit-transition-delay: 0s, 0.5s, 0.5s, 0s;
+}
+
+#Skill_Section .Skill_Text_Area .Skill_Text {
+    padding: 120px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#Skill_Section .Skill_Text_Area .Skill_Text::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f68338;
+}
+
+#Skill_Section .Skill_Text_Area .Skill_Text::before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 10px;
+    bottom: -10px;
+    right: -10px;
+    border: 2px solid #f68338;
+}
+
+#Skill_Section .Skill_Text_Area {
+    position: relative;
+}
+
+#Skill_Section .Skill_Text_Area .Skill_Image_One {
+    width: 170px;
+    position: absolute;
+    top: -75px;
+    left: -50px;
+    z-index: 1;
+}
+
+#Skill_Section .Skill_Text_Area .Skill_Image_Two {
+    width: 170px;
+    position: absolute;
+    bottom: -75px;
+    right: -50px;
+    z-index: 1;
+}
+
+#Skill_Section .Skill_Text_Area .Skill_Text h2 {
+    font-size: 32px;
+    color: #f68338;
+    font-size: 'Arimo';
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#Skill_Section .Skill_Text_Area .Skill_Text h2 span {
+    font-size: 45px;
+    font-family: 'Lobster';
+}
+
+/* ============================================
+            SKILL PART END
+============================================ */
+
+/* ============================================
+             PORTFOLIO PART START
+============================================ */
+#Resume_Section {
+    padding: 0 0 71px;
+}
+
+#Resume_Section .container .row {
+    display: flex;
+    align-items: center;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info {
+    width: 85%;
+}
+
+#Resume_Section .Resume_Info_Area:nth-child(even) .Resume_Info {
+    float: right !important;
+}
+
+#Resume_Section .Resume_Info_Area:nth-child(even) {
+    margin: 30px 0 !important;
+}
+
+#Resume_Section .Resume_Info_Area:nth-child(even) .Resume_Info_Content {
+    padding: 20px 150px 20px 20px !important;
+    border-radius: 0 100px 100px 0 !important;
+}
+
+#Resume_Section .Resume_Info_Area:nth-child(even) .Resume_Info_Icon {
+    left: auto !important;
+    right: 20px !important;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content {
+    padding: 15px 20px 15px 150px;
+    border-radius: 100px 0 0 100px;
+    border: 1px dashed #1d3548;
+    position: relative;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content .Resume_Info_Icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    height: 80px;
+    width: 80px;
+    background: #f68338;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid #ffffff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 1px #f68338;
+    box-shadow: 0px 0px 0px 1px #f68338;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content .Resume_Info_Icon i {
+    color: #fff;
+    font-size: 30px;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content h5 {
+    color: #1d3548;
+    font-size: 20px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content small {
+    color: #1d3548;
+    font-size: 14px;
+    font-family: 'Arimo';
+    margin: 5px 0 5px 15px;
+    display: block;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content span {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Arimo';
+    background: #f68338;
+    padding: 5px 7px;
+    border-radius: 5px;
+    float: right;
+}
+
+#Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content p {
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    opacity: 0.8;
+    line-height: 26px;
+}
+
+
+/* ============================================
+            SKILL PART END
+============================================ */
+
+/* ============================================
+             PORTFOLIO PART START
+============================================ */
+#Portfolio_Section {
+    padding: 0 0 74px;
+}
+
+.Section_Heading_Text_Area {
+    margin-bottom: 51px;
+}
+
+#Portfolio_Section .Portolio_Filter_Area {
+    justify-content: center;
+}
+
+#Portfolio_Section .Portolio_Filter_Area .Portolio_Filter {
+    margin-bottom: 25px;
+}
+
+#Portfolio_Section .Portolio_Filter_Area .Portolio_Filter ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Portfolio_Section .Portolio_Filter_Area .Portolio_Filter ul li {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+    text-transform: capitalize;
+    padding: 5px 15px;
+    background: #f68338;
+    box-shadow: 0 7px 14px 0 rgb(0 0 0 / 16%), 0 7px 14px 0 rgb(0 0 0 / 12%);
+    margin-right: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Portfolio_Section .Portolio_Filter_Area .Portolio_Filter ul li:hover {
+    background: #1d3548;
+    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, .16), 0 25px 30px 0 rgba(0, 0, 0, .12);
+}
+
+#Portfolio_Section .Portolio_Filter_Area .Portolio_Filter ul li.mixitup-control-active {
+    background: #1d3548;
+    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, .16), 0 25px 30px 0 rgba(0, 0, 0, .12);
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items {
+    position: relative;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info::before {
+    position: absolute;
+    content: '';
+    left: 10px;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    z-index: -1;
+    border-top: 3px solid #f68338;
+    border-left: 3px solid #f68338;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info::after {
+    position: absolute;
+    content: '';
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+    height: 70px;
+    z-index: -1;
+    border-bottom: 3px solid #f68338;
+    border-right: 3px solid #f68338;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info h4 {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #f68338;
+    padding: 10px 30px;
+    margin-bottom: 9px;
+    transform: perspective(500px) translateZ(60px);
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info span {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info .portfolio_icon a {
+    color: #1d3548;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items:hover .portfolio_info {
+    transform: scale(1);
+}
+
+#Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info .portfolio_icon a:hover {
+    color: #fff;
+    background: #f68338;
+}
+
+
+
+/* ============================================
+              PORTFOLIO PART END
+============================================ */
+
+/* ============================================
+              SUBSCRIBE PART START
+============================================ */
+#Subscribe_Section {
+    padding: 72px 0 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(29, 53, 72, 0.75);
+}
+
+#Subscribe_Section .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#Subscribe_Section .Subscribe_Text h3 {
+    color: #fff;
+    font-size: 45px;
+    font-family: Arimo;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .25);
+    z-index: -1;
+}
+
+.block:nth-child(3n + 2) {
+    background: #1d3548;
+}
+
+.block:nth-child(3n + 3) {
+    background: #ff9213;
+}
+
+/* ============================================
+              SUBSCRIBE PART END
+============================================ */
+/* ============================================
+              TESTIMONIAL PART START
+============================================ */
+#Testimonial_Section {
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    background: #f68338;
+}
+
+#Testimonial_Section::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: #1d3548;
+    z-index: -1;
+}
+
+#Testimonial_Section .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Testimonial_Section .Section_Heading_Text h3 {
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+#Testimonial_Section .Section_Heading_Text p {
+    color: #fff;
+}
+
+#Testimonial_Section .Section_Heading_Text h2 span {
+    display: block;
+    margin-left: 30px;
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 20px 60px;
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text p {
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    line-height: 26px;
+    margin-bottom: 31px;
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text span {
+    color: #1d3548;
+    font-size: 14px;
+    font-family: 'Arimo';
+    font-style: italic;
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 5px solid #f68338;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_User h5 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Arimo';
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_User span {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+    font-style: italic;
+}
+
+#Testimonial_Section .Teastimonial_Body_Area .Teastimonial_User {
+    text-align: center;
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text .Teastimonial_Start ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px
+}
+
+#Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text .Teastimonial_Start ul li a {
+    color: #f68338;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+#Testimonial_Section .Testimonial_Slider_Area {
+    position: relative;
+    padding: 0 30px;
+}
+
+#Testimonial_Section .Prev_Arrow {
+    position: absolute;
+    left: 0 !important;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    writing-mode: vertical-lr;
+    font-size: 16px;
+    z-index: 999 !important;
+    cursor: pointer;
+}
+
+#Testimonial_Section .Next_Arrow {
+    position: absolute;
+    right: 0 !important;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    writing-mode: vertical-lr;
+    font-size: 16px;
+    z-index: 1 !important;
+    cursor: pointer;
+}
+
+#Testimonial_Section .Prev_Arrow i,
+#Testimonial_Section .Next_Arrow i {
+    transform: rotate(90deg);
+}
+
+#Testimonial_Section .slick-dots {
+    display: flex;
+}
+
+#Testimonial_Section .slick-dots li button {
+    font-size: 0;
+    border: 0;
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    border-radius: 20px;
+    background: #fff;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Testimonial_Section .slick-dots li.slick-active button {
+    width: 20px;
+}
+
+/* ============================================
+              TESTIMONIAL PART END
+============================================ */
+
+/* ============================================
+              TEAM PART START
+============================================ */
+#Team_Section {
+    padding: 70px 0;
+}
+
+#Team_Section .Team_Card_Area {
+    padding: 0 15px;
+}
+
+#Team_Section .Team_Card_Area .Team_Card {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(#f68338, #f68338 30%, #1d3548 30%, #1d3548);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#Team_Section .Team_Card_Area .Team_Card .Team_Img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    transform-origin: top;
+}
+
+#Team_Section .Team_Card_Area .Team_Card:hover .Team_Img {
+    transform: translateY(30px) scale(0.5);
+}
+
+#Team_Section .Team_Card_Area .Team_Card .Team_Img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Team_Section .Team_Card_Area .Team_Card .Team_Detiels {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(100%);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Team_Section .Team_Card_Area .Team_Card:hover .Team_Detiels {
+    transform: translateY(0);
+}
+
+#Team_Section .Team_Card_Area .Team_Card .Team_Detiels .Team_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#Team_Section .Team_Card_Area .Team_Card .Team_Detiels .Team_info h5 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#Team_Section .Team_Card_Area .Team_Card .Team_Detiels .Team_info p {
+    color: #fff;
+    font-size: 16px;
+    opacity: .8;
+}
+
+#Team_Section .Contact_Social ul li {
+    width: 35px;
+    height: 35px;
+}
+
+/* ============================================
+              TEAM PART END
+============================================ */
+
+/* ============================================
+              CONTACT PART START
+============================================ */
+#Brand_Section {
+    padding: 80px 0;
+    background: #f68338;
+}
+
+#Brand_Section .Brand_Item_Area .Brand_Item {
+    padding: 0 40px;
+}
+
+/* ============================================
+              TEAM PART END
+============================================ */
+
+/* ============================================
+              CONTACT PART START
+============================================ */
+#Contact_Section {
+    padding: 70px 0 0;
+}
+
+#Contact_Section .Contact_Info_Heading h4 {
+    color: #1d3548;
+    font-size: 24px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+#Contact_Section .Contact_Info_Heading p {
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+#Contact_Section .Contact_Info_Heading {
+    margin-bottom: 22px;
+}
+
+#Contact_Section .Contact_Info_area .Contact_Info ul li p {
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    padding-left: 45px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#Contact_Section .Contact_Info_area .Contact_Info ul li p a {
+    color: #1d3548;
+    opacity: 0.75;
+    display: block;
+    text-transform: lowercase;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Contact_Section .Contact_Info_area .Contact_Info ul li p a:hover {
+    color: #f68338;
+}
+
+#Contact_Section .Contact_Info_area .Contact_Info ul li p i {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    font-size: 35px;
+    color: #f68338;
+}
+
+#Contact_Section .Contact_Info_area .Contact_Info ul li {
+    margin-bottom: 19px;
+}
+
+#Contact_Section .Contact_Info_area .Contact_Info {
+    margin-bottom: 24px;
+}
+
+#Contact_Section .Contact_Info_area .Contact_Social h4 {
+    color: #1d3548;
+    font-size: 24px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.Contact_Social ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Contact_Social ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f68338;
+    border: 1px solid #f68338;
+    margin: 5px;
+    z-index: 1;
+    position: relative;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+.Contact_Social ul li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.Contact_Social ul li::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    z-index: -1;
+    background: #f68338;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+.Contact_Social ul li:hover {
+    background: #fff;
+}
+
+.Contact_Social ul li:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.Contact_Social p {
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    opacity: .8;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area {
+    margin: 30px 0 0;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox input,
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox.TextArea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-family: 'Arimo';
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    color: #1d3548;
+    font-size: 16px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    font-style: italic;
+    opacity: .75;
+    padding: 0 10px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox input:focus+.text,
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox input:valid+.text,
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox textarea:focus+.text,
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox textarea:valid+.text {
+    top: -35px;
+    left: -10px;
+    color: #f68338;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #f68338;
+    border-radius: 2px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox input:focus~.line,
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox input:valid~.line,
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox textarea:focus~.line,
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox textarea:valid~.line {
+    height: 100%;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox.TextArea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+#Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox.TextArea textarea {
+    height: 100%;
+    resize: none;
+}
+
+#Contact_Section .Contact_InputBox_area .FormButton_Area .FormButton button {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 19px;
+    border: 0;
+    background: #1d3548;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+#Contact_Section .Contact_InputBox_area .FormButton_Area .FormButton button:hover {
+    background: #f68338;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+#Contact_Section .Copy_Right {
+    text-align: center;
+    background: #f68338;
+    padding: 60px 0 20px;
+    clip-path: polygon(69% 0, 100% 38%, 100% 100%, 0 100%, 0 59%);
+}
+
+#Contact_Section .Copy_Right .Copy_Text p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arimo';
+}
+
+#Contact_Section .Copy_Right .Copy_Text p a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ============================================
+              CONTACT PART END
+============================================ */
+
+/* =========================================
+              SCROLL TOP START
+============================================ */
+.Go_To_Top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 30px;
+    right: 30px;
+    color: #ffffff;
+    background: #1d3548;
+    z-index: 4;
+    width: 40px;
+    height: 42px;
+    line-height: 42px;
+    border: 2px solid #fff;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all linear 0.9s;
+    transition: all linear 0.9s;
+    -webkit-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+}
+
+.Go_To_Top.Scroll_Active {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    animation: 1s;
+}
+
+.Go_To_Top i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+}
+
+.Go_To_Top i:last-child {
+    opacity: 0;
+    visibility: hidden;
+    top: 60%;
+}
+
+.Go_To_Top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #f68338;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+}
+
+.Go_To_Top:hover,
+.Go_To_Top:focus {
+    color: #ffffff;
+}
+
+.Go_To_Top:hover::before,
+.Go_To_Top:focus::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Go_To_Top:hover i:first-child,
+.Go_To_Top:focus i:first-child {
+    opacity: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.Go_To_Top:hover i:last-child,
+.Go_To_Top:focus i:last-child {
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+}
+
+/* =========================================
+              SCROLL TOP END
+============================================ */

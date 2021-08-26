@@ -1,0 +1,1450 @@
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #Menu_Part .Main_Menu_Area .Desktop_Menu ul li a {
+        margin-left: 10px;
+        letter-spacing: 0;
+    }
+    #Menu_Part .Main_Menu_Area .Desktop_Menu ul li a {
+        font-size: 15px;
+        margin-left: 10px;
+        letter-spacing: 0.3px;
+    }
+    #Menu_Part .Call_Button_Area .Call_Button .Common_Button {
+        padding: 8px 12px;
+        letter-spacing: 0;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1 {
+        font-size: 65px;
+    }
+
+    #Skill_Section .Skill_Card .Skill_Head {
+        letter-spacing: 0px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text {
+        padding: 100px 50px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_One img,
+    #Skill_Section .Skill_Text_Area .Skill_Image_Two img {
+        width: 150px;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info {
+        width: 85%;
+    }
+
+    #Resume_Section .Resume_Info_Area:nth-child(even) .Resume_Info_Content {
+        padding: 20px 110px 20px 20px !important;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_Two {
+        bottom: -80px;
+        right: -30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* ================= MENU PART START ================= */
+    #Menu_Part .Menu_Logo_Area .Menu_Logo a h2 {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+
+    #Menu_Part .Main_Menu_Area .Desktop_Menu ul li a {
+        font-size: 14px;
+        margin-left: 12px;
+        letter-spacing: 0;
+    }
+
+    /* ================= MENU PART END ================= */
+
+    /* ================= BANNER PART START ================= */
+    #Banner_Section {
+        padding: 180px 0 120px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h4 {
+        font-size: 22px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1::before {
+        bottom: -15px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1::after {
+        bottom: -22px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text #typed {
+        font-size: 22px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text p {
+        padding: 0 0 0 20px;
+        margin-bottom: 24px;
+    }
+
+    /* ================= BANNER PART END ================= */
+
+    /* ================= ABOUT PART START ================= */
+    #About_Section {
+        padding: 64px 0 55px;
+    }
+
+    .Section_Heading_Text h3 {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+
+    #About_Section .About_Detail_Area .About_Detail h4 {
+        font-size: 22px;
+    }
+
+    .Common_Button {
+        padding: 8px 13px;
+        letter-spacing: 1.5px;
+    }
+
+    #About_Section .Common_Button_area .Common_Button.LstButton_Margin {
+        margin-right: 0;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter_Icon i {
+        font-size: 40px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter span {
+        font-size: 40px;
+    }
+
+    /* ================= ABOUT PART END ================= */
+
+    /* ================= SURVICE PART START ================= */
+    #Service_Section {
+        padding: 55px 0 63px;
+    }
+
+    #Service_Section::before {
+        height: 100%;
+        width: 100%;
+    }
+
+    #Service_Section .Section_Heading_Text h3 {
+        margin-bottom: 18px;
+    }
+
+    #Service_Section .Section_Heading_Text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .Section_Heading_Text_Area {
+        margin-bottom: 35px;
+    }
+
+    .Section_Heading_Text h3 span {
+        margin-left: 0;
+        display: inline;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Front h4 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Front span i {
+        font-size: 40px;
+        width: 90px;
+        height: 90px;
+    }
+
+    /* ================= SURVICE PART END ================= */
+
+    /* ================= SKILL PART START ================= */
+    #Skill_Section {
+        padding: 55px 0px 37px;
+    }
+
+    #Skill_Section .Skill_Card .Skill_Head {
+        letter-spacing: 0;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text {
+        padding: 100px 0;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_One {
+        width: 140px;
+        top: -85px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_Two {
+        width: 140px;
+        bottom: -85px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* ================= SKILL PART END ================= */
+
+    /* ================= RESUME PART START ================= */
+    #Resume_Section {
+        padding: 0 0 55px;
+    }
+
+    .Section_Heading_Text_Area {
+        text-align: center;
+    }
+
+    .Section_Heading_Text h2 span {
+        display: inline;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info {
+        width: 80%;
+    }
+
+    #Resume_Section .Resume_Info_Area:nth-child(even) {
+        margin: 30px 0 !important;
+    }
+
+    /* ================= RESUME PART END ================= */
+
+    /* ================= PORTFOLIO PART START ================= */
+    #Portfolio_Section {
+        padding: 0px 0 64px;
+    }
+
+    #Subscribe_Section {
+        padding: 56px 0 64px;
+    }
+
+    #Subscribe_Section .Subscribe_Text h3 {
+        font-size: 35px;
+    }
+
+    /* ================= PORTFOLIO PART END ================= */
+
+    /* ================= TESTIMONIAL PART START ================= */
+
+    #Testimonial_Section {
+        padding: 62px 0;
+    }
+
+    #Testimonial_Section .Section_Heading_Text_Area {
+        text-align: left;
+    }
+
+    #Testimonial_Section .Section_Heading_Text h3 {
+        margin-bottom: 18px;
+    }
+
+    #Testimonial_Section .Section_Heading_Text_Area .Section_Heading_Text h3 span {
+        margin-left: 30px;
+        display: block;
+    }
+
+    /* ================= TESTIMONIAL PART END ================= */
+
+    /* ================= TEAM & BRAND PART START ================= */
+    #Team_Section {
+        padding: 56px 0 34px;
+    }
+
+    #Brand_Section {
+        padding: 62px 0;
+    }
+
+    /* ================= TEAM & BRAND PART END ================= */
+
+    /* ================= CONTACT PART START ================= */
+    #Contact_Section {
+        padding: 55px 0 0;
+    }
+
+    #Contact_Section .Contact_Info_Heading h4,
+    #Contact_Section .Contact_Info_area .Contact_Social h4 {
+        font-size: 22px;
+    }
+
+    #Contact_Section .Contact_Info_Heading {
+        margin-bottom: 22px;
+    }
+
+    #Contact_Section .Contact_InputBox_area .FormButton_Area .FormButton button {
+        font-size: 16px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info {
+        margin-bottom: 32px;
+    }
+
+    .Contact_Social ul {
+        margin-bottom: 12px;
+    }
+
+    /* ================= CONTACT PART END ================= */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* ================= MENU PART START ================= */
+    #Menu_Part {
+        position: relative;
+        background: #f68338;
+        padding: 15px 0;
+    }
+
+    #Menu_Part .Menu_Logo_Area .Menu_Logo a h2 {
+        font-size: 30px;
+    }
+
+    /* ================= MENU PART END ================= */
+
+    /* ================= BANNER PART START ================= */
+    #Banner_Section {
+        padding: 130px 0 80px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text {
+        text-align: center;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h4 {
+        font-size: 20px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1::before {
+        display: none;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1::after {
+        display: none;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text #typed {
+        font-size: 20px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text p::before {
+        display: none;
+    }
+
+    .Common_Button {
+        font-size: 14px;
+        padding: 5px 10px;
+        letter-spacing: 0;
+    }
+
+    /* ================= BANNER PART END ================= */
+
+    /* ================= ABOUT PART START ================= */
+    #About_Section {
+        padding: 41px 0 46px;
+    }
+
+    #About_Section::before,
+    #About_Section::after {
+        width: 100%;
+    }
+
+    .Section_Heading_Text h3 {
+        font-size: 28px;
+    }
+
+    #About_Section .About_Counter_Area {
+        border-radius: 0;
+    }
+
+    #About_Section .About_Detail_Area .About_Detail h4 {
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 7px;
+        text-align: justify;
+    }
+
+    #About_Section .About_Detail_Area .About_Detail p {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.8;
+        line-height: 24px;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+
+    #About_Section .About_Detail_Area {
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    #About_Section .Common_Button {
+        font-size: 14px;
+        padding: 5px 7px;
+        letter-spacing: 0;
+    }
+
+    #About_Section .About_Counter_Area {
+        margin-top: 35px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter {
+        padding: 30px 0;
+        margin-bottom: 15px;
+        box-shadow: rgb(29 53 72 / 25%) 25px 25px 50px -12px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter.Mar_Bot {
+        margin-bottom: 0;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter::after {
+        transform: translateX(-100%);
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter:hover::after {
+        transform: translateX(0);
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter_Icon i {
+        font-size: 30px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter span {
+        font-size: 25px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter_Info p {
+        font-size: 14px;
+    }
+
+
+    /* ================= ABOUT PART END ================= */
+
+    /* ================= SERVICE PART START ================= */
+    #Service_Section {
+        padding: 42px 0 33px;
+    }
+
+    #Service_Section::before {
+        width: 100%;
+    }
+
+    #Service_Section .Section_Heading_Text h3 {
+        margin-bottom: 11px;
+        line-height: 35px;
+    }
+
+    #Service_Section .Survice_Card_Area {
+        margin-bottom: 15px !important;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Front span i {
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Front h3 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Back p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #Service_Section .Survice_Mar {
+        margin-bottom: 0;
+    }
+
+    #Service_Section .Section_Heading_Text {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    #Service_Section .Section_Heading_Text h2 {
+        margin-bottom: 7px;
+    }
+
+    /* ================= SERVICE PART END ================= */
+
+    /* ================= SKILL PART START ================= */
+    #Skill_Section {
+        padding: 42px 0px 84px;
+    }
+
+    #Skill_Section .Skill_Card.Mar_Bot {
+        margin-bottom: 0;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text::before {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text {
+        padding: 180px 50px;
+        margin-bottom: 45px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text h2 {
+        font-size: 26px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_One {
+        width: 160px;
+        top: 10px;
+        left: 22px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_Two {
+        width: 160px;
+        bottom: 55px;
+        right: 22px;
+    }
+
+    /* ================= SKILL PART END ================= */
+
+    /* ================= RESUME PART START ================= */
+    #Resume_Section {
+        padding: 0 0 42px;
+    }
+
+    #Resume_Section .Section_Heading_Text_Area {
+        text-align: center;
+        margin-bottom: 31px;
+    }
+
+    #Resume_Section .Section_Heading_Text h2 {
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+
+    .Section_Heading_Text h2 span {
+        margin-left: 0;
+    }
+
+    .Section_Heading_Text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info {
+        width: 100%;
+    }
+
+    #Resume_Section .Resume_Info_Area:nth-child(even) {
+        margin: 15px 0 15px 18px !important;
+    }
+
+    #Resume_Section .Resume_Info_Area:nth-child(even) .Resume_Info_Content {
+        padding: 20px 150px 20px 20px !important;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content .Resume_Info_Icon {
+        height: 50px;
+        width: 50px;
+        border: 5px solid #ffffff;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content .Resume_Info_Icon i {
+        font-size: 20px;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content h5 {
+        font-size: 16px;
+        display: block;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content span {
+        padding: 3px 5px;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content small {
+        margin: 5px 0 5px 0;
+        display: block;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* ================= RESUME PART END ================= */
+
+    /* ================= PORTFOLIO PART START ================= */
+    #Portfolio_Section {
+        padding: 0 0 47px;
+    }
+
+    .Section_Heading_Text_Area {
+        margin-bottom: 28px;
+    }
+
+    #Portfolio_Section .Portolio_Filter_Area .Portolio_Filter {
+        margin-bottom: 36px;
+    }
+
+    #Portfolio_Section .Portolio_Filter_Area .Portolio_Filter ul li {
+        font-size: 14px;
+        padding: 3px 7px;
+        margin-right: 6px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items {
+        margin-bottom: 30px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info h4 {
+        font-size: 18px;
+        padding: 6px 15px;
+        margin-bottom: 3px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info span {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info .portfolio_icon a {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+    }
+
+    #Portfolio_Section .Portfolio_Margin {
+        margin-bottom: 0px !important;
+    }
+
+    /* ================= PORTFOLIO PART END ================= */
+
+    /* ================= TESTIMONIAL PART START ================= */
+    #Subscribe_Section {
+        padding: 42px 0 47px;
+    }
+
+    #Subscribe_Section .Subscribe_Text h3 {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+
+    #Testimonial_Section {
+        padding: 41px 0 45px;
+    }
+
+    #Testimonial_Section::before {
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #Testimonial_Section .Section_Heading_Text h3 {
+        margin-bottom: 11px;
+        line-height: 35px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body {
+        background: #fff;
+        border-radius: 20px;
+        padding: 15px 15px 50px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 7px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text .Teastimonial_Start ul {
+        margin-top: 8px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Image {
+        width: 90px;
+        height: 90px;
+        border: 3px solid #f68338;
+    }
+
+    #Testimonial_Section .Next_Arrow {
+        font-size: 14px;
+        right: 50px !important;
+    }
+
+    #Testimonial_Section .Prev_Arrow {
+        font-size: 14px;
+        left: 50px !important;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_User h5 {
+        font-size: 16px;
+        margin: 15px 0 0 0;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_User span {
+        font-size: 14px;
+    }
+
+    /* ================= TESTIMONIAL PART END ================= */
+
+    /* ================= TEAM PART START ================= */
+    #Team_Section {
+        padding: 41px 0 47px;
+    }
+
+    #Team_Section .Team_Card_Area {
+        padding: 0 7.5px;
+    }
+
+    #Team_Section .Section_Heading_Text_Area {
+        margin-bottom: 31px;
+    }
+
+    #Team_Section .Section_Heading_Text h2 {
+        margin-bottom: 7px;
+    }
+
+    #Team_Section .Team_Card_Area:last-child {
+        margin-bottom: 0;
+    }
+
+    #Team_Section .Team_Card_Area .Team_Card {
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    #Team_Section .Team_Card_Area .Team_Card .Team_Detiels .Team_info h5 {
+        font-size: 16px;
+    }
+
+    #Team_Section .Team_Card_Area .Team_Card .Team_Detiels .Team_info p {
+        font-size: 14px;
+    }
+
+    #Team_Section .Prev_Arrow,
+    #Team_Section .Next_Arrow {
+        display: none !important;
+    }
+
+    /* ================= TEAM PART END ================= */
+
+    /* ================= BRAND PART START ================= */
+    #Brand_Section {
+        padding: 46px 0;
+    }
+
+    #Brand_Section .Brand_Item_Area .Brand_Item {
+        padding: 0 25px;
+    }
+
+    /* ================= BRAND PART END ================= */
+
+    /* ================= CONTACT PART START ================= */
+    #Contact_Section {
+        padding: 41px 0 0;
+    }
+
+    #Contact_Section .Section_Heading_Text_Area {
+        margin-bottom: 17px;
+    }
+
+    #Contact_Section .Section_Heading_Text h2 {
+        margin-bottom: 7px;
+    }
+
+    #Contact_Section .Contact_Info_Heading {
+        margin-bottom: 10px;
+    }
+
+    #Contact_Section .Contact_Info_Heading h4 {
+        font-size: 20px;
+    }
+
+    #Contact_Section .Contact_InputBox_area {
+        margin-bottom: 30px;
+    }
+
+    #Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox .text,
+    #Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox input,
+    #Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox.TextArea textarea {
+        font-size: 14px;
+    }
+
+    #Contact_Section .Contact_InputBox_area .FormButton_Area .FormButton button {
+        font-size: 14px;
+        padding: 7px 0;
+        margin-top: 12px;
+        border-radius: 0px;
+    }
+
+    #Contact_Section .Contact_Info_Heading p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info ul li {
+        margin-bottom: 5px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info ul li p {
+        font-size: 14px;
+        padding-left: 35px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info ul li p i {
+        font-size: 27px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info {
+        margin-bottom: 28px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Social h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .Contact_Social ul {
+        margin-bottom: 11px;
+    }
+
+    .Contact_Social ul li {
+        width: 30px !important;
+        height: 30px !important;
+        margin: 3px;
+    }
+
+    .Contact_Social ul li a {
+        font-size: 16px;
+    }
+
+    .Contact_Social p {
+        font-size: 14px;
+    }
+
+    #Contact_Section .Copy_Right {
+        text-align: start;
+        padding: 35px 0 0px;
+        clip-path: polygon(65% 0, 100% 30%, 100% 100%, 0 100%, 0 40%);
+    }
+
+    #Contact_Section .Copy_Right .Copy_Text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Go_To_Top {
+        bottom: 15px;
+        right: 15px;
+        width: 30px;
+        height: 35px;
+    }
+
+    /* ================= CONTACT PART END ================= */
+}
+
+@media (max-width: 575px) {
+
+    /* ================= MENU PART START ================= */
+    #Menu_Part {
+        position: relative;
+        background: #f68338;
+        padding: 15px 0;
+    }
+
+    #Menu_Part .Menu_Logo_Area .Menu_Logo a h2 {
+        font-size: 30px;
+    }
+
+    /* ================= MENU PART END ================= */
+
+    /* ================= BANNER PART START ================= */
+    #Banner_Section {
+        padding: 130px 0 80px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text {
+        text-align: center;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h4 {
+        font-size: 20px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1::before {
+        display: none;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text h1::after {
+        display: none;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text #typed {
+        font-size: 20px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+
+    #Banner_Section .Banner_Text_Area .Banner_Text p::before {
+        display: none;
+    }
+
+    .Common_Button {
+        font-size: 14px;
+        padding: 5px 10px;
+        letter-spacing: 0;
+    }
+
+    /* ================= BANNER PART END ================= */
+
+    /* ================= ABOUT PART START ================= */
+    #About_Section {
+        padding: 40px 0;
+    }
+
+    #About_Section::before,
+    #About_Section::after {
+        width: 100%;
+    }
+
+    .Section_Heading_Text h3 {
+        font-size: 28px;
+    }
+
+    #About_Section .About_Counter_Area {
+        border-radius: 0;
+    }
+
+    #About_Section .About_Detail_Area .About_Detail h4 {
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 7px;
+        text-align: justify;
+    }
+
+    #About_Section .About_Detail_Area .About_Detail p {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.8;
+        line-height: 24px;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+
+    #About_Section .About_Detail_Area {
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    #About_Section .Common_Button {
+        font-size: 14px;
+        padding: 5px 7px;
+        letter-spacing: 0;
+    }
+
+    #About_Section .About_Counter_Area {
+        margin-top: 35px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter {
+        padding: 30px 0;
+        margin-bottom: 15px;
+        box-shadow: rgb(29 53 72 / 25%) 25px 25px 50px -12px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter.Mar_Bot {
+        margin-bottom: 0;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter::after {
+        transform: translateX(-100%);
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter:hover::after {
+        transform: translateX(0);
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter_Icon i {
+        font-size: 30px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter span {
+        font-size: 25px;
+    }
+
+    #About_Section .About_Counter_Area .Single_About_Counter_Area .About_Counter_Info p {
+        font-size: 14px;
+    }
+
+
+    /* ================= ABOUT PART END ================= */
+
+    /* ================= SERVICE PART START ================= */
+    #Service_Section {
+        padding: 41px 0 31px;
+    }
+
+    #Service_Section::before {
+        width: 100%;
+    }
+
+    #Service_Section .Section_Heading_Text h3 {
+        margin-bottom: 11px;
+        line-height: 35px;
+    }
+
+    #Service_Section .Survice_Card_Area {
+        margin-bottom: 15px !important;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Front span i {
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Front h3 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    #Service_Section .Survice_Card_Area .Survice_Card_Back p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #Service_Section .Survice_Mar {
+        margin-bottom: 0;
+    }
+
+    #Service_Section .Section_Heading_Text {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    #Service_Section .Section_Heading_Text h2 {
+        margin-bottom: 7px;
+    }
+
+    /* ================= SERVICE PART END ================= */
+
+    /* ================= SKILL PART START ================= */
+    #Skill_Section {
+        padding: 42px 0px 24px;
+    }
+
+    #Skill_Section .Skill_Text_Area {
+        margin-bottom: -10px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text::before {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text {
+        padding: 130px 50px;
+        margin-bottom: 45px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Text h2 {
+        font-size: 26px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_One {
+        width: 120px;
+        top: 10px;
+        left: 22px;
+    }
+
+    #Skill_Section .Skill_Text_Area .Skill_Image_Two {
+        width: 120px;
+        bottom: 55px;
+        right: 22px;
+    }
+
+    /* ================= SKILL PART END ================= */
+
+    /* ================= RESUME PART START ================= */
+    #Resume_Section {
+        padding: 0 0 42px;
+    }
+
+    #Resume_Section .Section_Heading_Text_Area {
+        text-align: center;
+        margin-bottom: 31px;
+    }
+
+    #Resume_Section .Section_Heading_Text h2 {
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+
+    .Section_Heading_Text h2 span {
+        margin-left: 0;
+    }
+
+    .Section_Heading_Text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info {
+        width: 100%;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content {
+        padding: 70px 15px 15px 15px;
+        border-radius: 15px;
+    }
+
+    #Resume_Section .Resume_Info_Area:nth-child(even) .Resume_Info_Content {
+        padding: 70px 15px 15px 15px !important;
+        border-radius: 15px !important;
+    }
+
+    #Resume_Section .Resume_Info_Area:nth-child(even) .Resume_Info_Icon {
+        left: 50% !important;
+    }
+
+    #Resume_Section .Resume_Info_Area:nth-child(even) {
+        margin: 15px 0 !important;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content .Resume_Info_Icon {
+        left: 50%;
+        top: 15px;
+        transform: translateX(-50%);
+        height: 50px;
+        width: 50px;
+        border: 5px solid #ffffff;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content .Resume_Info_Icon i {
+        font-size: 20px;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content h5 {
+        font-size: 16px;
+        display: block;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content span {
+        padding: 3px 5px;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content small {
+        margin: 5px 0 5px 0;
+        display: block;
+    }
+
+    #Resume_Section .Resume_Info_Area .Resume_Info .Resume_Info_Content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* ================= RESUME PART END ================= */
+
+    /* ================= PORTFOLIO PART START ================= */
+    #Portfolio_Section {
+        padding: 0 0 47px;
+    }
+
+    .Section_Heading_Text_Area {
+        margin-bottom: 28px;
+    }
+
+    #Portfolio_Section .Portolio_Filter_Area .Portolio_Filter {
+        margin-bottom: 36px;
+    }
+
+    #Portfolio_Section .Portolio_Filter_Area .Portolio_Filter ul li {
+        font-size: 14px;
+        padding: 3px 7px;
+        margin-right: 6px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items {
+        margin-bottom: 30px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info h4 {
+        font-size: 18px;
+        padding: 6px 15px;
+        margin-bottom: 3px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info span {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    #Portfolio_Section .Portfolio_Items_Area .Portfolio_Items .portfolio_info .portfolio_icon a {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+    }
+
+    #Portfolio_Section .Portfolio_Margin {
+        margin-bottom: 0px !important;
+    }
+
+    /* ================= PORTFOLIO PART END ================= */
+
+    /* ================= TESTIMONIAL PART START ================= */
+    #Subscribe_Section {
+        padding: 42px 0 47px;
+    }
+
+    #Subscribe_Section .Subscribe_Text h3 {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+
+    #Testimonial_Section {
+        padding: 41px 0 45px;
+    }
+
+    #Testimonial_Section::before {
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #Testimonial_Section .Section_Heading_Text h3 {
+        margin-bottom: 11px;
+        line-height: 35px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body {
+        background: #fff;
+        border-radius: 20px;
+        padding: 15px 15px 50px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 7px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Body .Teastimonial_text .Teastimonial_Start ul {
+        margin-top: 8px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_Image {
+        width: 90px;
+        height: 90px;
+        border: 3px solid #f68338;
+    }
+
+    #Testimonial_Section .Next_Arrow {
+        font-size: 14px;
+    }
+
+    #Testimonial_Section .Prev_Arrow {
+        font-size: 14px;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_User h5 {
+        font-size: 16px;
+        margin: 15px 0 0 0;
+    }
+
+    #Testimonial_Section .Testimonial_Slider .Teastimonial_Body_Area .Teastimonial_User span {
+        font-size: 14px;
+    }
+
+    /* ================= TESTIMONIAL PART END ================= */
+
+    /* ================= TEAM PART START ================= */
+    #Team_Section {
+        padding: 41px 0 47px;
+    }
+
+    #Team_Section .Team_Card_Area {
+        padding: 0 7.5px;
+    }
+
+    #Team_Section .Section_Heading_Text_Area {
+        margin-bottom: 31px;
+    }
+
+    #Team_Section .Section_Heading_Text h2 {
+        margin-bottom: 7px;
+    }
+
+    #Team_Section .Team_Card_Area:last-child {
+        margin-bottom: 0;
+    }
+
+    #Team_Section .Team_Card_Area .Team_Card {
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    #Team_Section .Team_Card_Area .Team_Card .Team_Detiels .Team_info h5 {
+        font-size: 16px;
+    }
+
+    #Team_Section .Team_Card_Area .Team_Card .Team_Detiels .Team_info p {
+        font-size: 14px;
+    }
+
+    #Team_Section .Prev_Arrow,
+    #Team_Section .Next_Arrow {
+        display: none !important;
+    }
+
+    /* ================= TEAM PART END ================= */
+
+    /* ================= BRAND PART START ================= */
+    #Brand_Section {
+        padding: 46px 0;
+    }
+
+    #Brand_Section .Brand_Item_Area .Brand_Item {
+        padding: 0 25px;
+    }
+
+    /* ================= BRAND PART END ================= */
+
+    /* ================= CONTACT PART START ================= */
+    #Contact_Section {
+        padding: 41px 0 0;
+    }
+
+    #Contact_Section .Section_Heading_Text_Area {
+        margin-bottom: 17px;
+    }
+
+    #Contact_Section .Section_Heading_Text h2 {
+        margin-bottom: 7px;
+    }
+
+    #Contact_Section .Contact_Info_Heading {
+        margin-bottom: 10px;
+    }
+
+    #Contact_Section .Contact_Info_Heading h4 {
+        font-size: 20px;
+    }
+
+    #Contact_Section .Contact_InputBox_area {
+        margin-bottom: 30px;
+    }
+
+    #Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox .text,
+    #Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox input,
+    #Contact_Section .Contact_InputBox_area .Submit_Form .InputBox_Area .InputBox.TextArea textarea {
+        font-size: 14px;
+    }
+
+    #Contact_Section .Contact_InputBox_area .FormButton_Area .FormButton button {
+        font-size: 14px;
+        padding: 7px 0;
+        margin-top: 12px;
+        border-radius: 0px;
+    }
+
+    #Contact_Section .Contact_Info_Heading p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info ul li {
+        margin-bottom: 5px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info ul li p {
+        font-size: 14px;
+        padding-left: 35px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info ul li p i {
+        font-size: 27px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Info {
+        margin-bottom: 28px;
+    }
+
+    #Contact_Section .Contact_Info_area .Contact_Social h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .Contact_Social ul {
+        margin-bottom: 11px;
+    }
+
+    .Contact_Social ul li {
+        width: 30px !important;
+        height: 30px !important;
+        margin: 3px;
+    }
+
+    .Contact_Social ul li a {
+        font-size: 16px;
+    }
+
+    .Contact_Social p {
+        font-size: 14px;
+    }
+
+    #Contact_Section .Copy_Right {
+        text-align: start;
+        padding: 35px 0 0px;
+        clip-path: polygon(65% 0, 100% 30%, 100% 100%, 0 100%, 0 40%);
+    }
+
+    #Contact_Section .Copy_Right .Copy_Text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Go_To_Top {
+        bottom: 10px;
+        right: 10px;
+        width: 25px;
+        height: 35px;
+    }
+
+    /* ================= CONTACT PART END ================= */
+}
